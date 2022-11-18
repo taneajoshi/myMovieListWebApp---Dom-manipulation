@@ -56,7 +56,6 @@ const deleteMovieHandler = (movieId) => {
     }
 
     movies.splice(indexNumber, 1);
-    console.log(movies);
     const listRoot = document.getElementById('movie-list');
     listRoot.children[indexNumber].remove();
     closeConfirmationModal();
