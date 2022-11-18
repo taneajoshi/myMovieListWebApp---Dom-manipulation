@@ -88,7 +88,7 @@ const startdeleteMovieHandler = (movieId) => {
 function renderCardUi(movieId) {
     const delCardIcon = document.createElement('button');
     delCardIcon.className = "del-btn";
-    delCardIcon.innerHTML = '<img src="./images/del-icon.png" alt="delete icon">'
+    delCardIcon.innerHTML = '<img src="./assets/images/del-icon.png" alt="delete icon">'
     delCardIcon.addEventListener('click', startdeleteMovieHandler.bind(null, movieId));
     for(let i=0; i<movieList.children.length; i++) {
         movieList.children[i].append(delCardIcon);
